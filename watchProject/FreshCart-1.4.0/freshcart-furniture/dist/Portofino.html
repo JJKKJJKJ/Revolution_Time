@@ -23,7 +23,7 @@
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="./assets/css/theme.min.css">
 
-	<title>Prouduct No Filter eCommerce HTML Template - FreshCart Furniture</title>
+	<title>Prouduct Top Filter eCommerce HTML Template - FreshCart Furniture</title>
 </head>
 
 <body>
@@ -480,11 +480,11 @@
 			</div>
 		</div>
 	</nav>
-	<!--Pageheader start-->
+	<!--Pageheader  start-->
 	<section class="bg-light d-flex flex-column align-items-center justify-content-center" style="
 				background:
 					linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.22)),
-					url(./assets/images/aasonjihye/배너.jpg) no-repeat;
+					url(./assets/images/jpg/page-header-img.jpg) no-repeat;
 				background-position: center;
 				background-size: cover;
 			">
@@ -492,21 +492,36 @@
 			<div class="row align-items-center py-6">
 				<div class="col-lg-6">
 					<div class="position-relative z-1">
-						<h1 class="mb-4 text-white">Revolution_Time</h1>
+						<h1 class="mb-4 text-white">Office</h1>
 						<p class="lead text-white">As everyone heads back to work, whether that be into the office or
-							the classroom, having an organized desk space is essential.</p>
+							the classroom,
+							having an organized desk space is essential.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="w-lg-50 w-100 position-absolute end-0 top-0 object-fit-cover"></div>
 	</section>
-	<!--Pageheader end-->
-	<!--Product no filter start-->
-	<section class="py-md-6 py-4">
+	<!--Pageheader  end-->
+	<!--Breadcrumb start-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12 py-2">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb mb-0">
+						<li class="breadcrumb-item"><a href="#!">Shop</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Office</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--Breadcrumb end-->
+	<!--Product top filter start-->
+	<section class="py-md-6">
 		<div class="container">
 			<div class="row">
-				<!--Filter-->
+				<!--Top filter-->
 				<aside class="">
 					<div class="offcanvas offcanvas-end border-end-0" tabindex="-1" id="offcanvasCategory"
 						aria-labelledby="offcanvasCategoryLabel">
@@ -516,7 +531,16 @@
 								aria-label="Close"></button>
 						</div>
 						<div class="offcanvas-body p-4">
-							<!--Color-->
+							<div class="mb-3 border-bottom pb-3">
+								<select class="" data-choices="" data-choices-removeitembutton="true"
+									aria-label="Default select example">
+									<option value="">Most Popular</option>
+									<option value="Best Match">Best Match</option>
+									<option value="New Arrivals">New Arrivals</option>
+									<option value="Price, low to high">Price, low to high</option>
+									<option value="Price, high to low">Price, high to low</option>
+								</select>
+							</div>
 							<div class="mb-3 border-bottom pb-3">
 								<a class="d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
 									href="#collapseColor" role="button" aria-expanded="true"
@@ -585,7 +609,6 @@
 									</div>
 								</div>
 							</div>
-							<!--Brand-->
 							<div class="mb-3 border-bottom pb-3">
 								<a class="d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
 									href="#collapseBrand" role="button" aria-expanded="false"
@@ -623,7 +646,6 @@
 									</div>
 								</div>
 							</div>
-							<!--Product type-->
 							<div class="mb-3 border-bottom pb-3">
 								<a class="d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
 									href="#collapseProductType" role="button" aria-expanded="false"
@@ -667,7 +689,6 @@
 									</div>
 								</div>
 							</div>
-							<!--Price-->
 							<div class="mb-3 border-bottom pb-3">
 								<a class="d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
 									href="#collapsePrice" role="button" aria-expanded="false"
@@ -684,7 +705,6 @@
 									</div>
 								</div>
 							</div>
-							<!--Rating-->
 							<div class="mb-3 border-bottom pb-3">
 								<a class="d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
 									href="#collapseRating" role="button" aria-expanded="false"
@@ -768,10 +788,10 @@
 					</div>
 				</aside>
 				<div class="col-lg-12">
-					<div class="row">
+					<div class="row mb-4">
 						<div class="col-12">
-							<!--Filter-->
-							<div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+							<div class="d-flex align-items-center gap-lg-8 gap-3 mb-4 flex-wrap">
+								<!--Filter-->
 								<div>
 									<a class="d-inline-flex align-items-center gap-2" data-bs-toggle="offcanvas"
 										href="#offcanvasCategory" role="button" aria-controls="offcanvasCategory">
@@ -783,19 +803,209 @@
 										<span>Filter</span>
 									</a>
 								</div>
+								<!--Most popular-->
+								<div class="d-flex align-items-center gap-3 flex-wrap flex-grow-1">
+									<div class="col-lg-3 col-12">
+										<select class="" data-choices="" data-choices-removeitembutton="true"
+											aria-label="Default select example">
+											<option value="">Most Popular</option>
+											<option value="Best Match">Best Match</option>
+											<option value="New Arrivals">New Arrivals</option>
 
-								<div class="col-lg-3 col-xxl-2 col-8 col-md-4">
-									<select data-choices data-choices-removeitembutton="true"
-										data-choices-classname="form-select" aria-label="Default select example">
-										<option value="">Most Popular</option>
-										<option value="Best Match">Best Match</option>
-										<option value="New Arrivals">New Arrivals</option>
-										<option value="Price, low to high">Price, low to high</option>
-										<option value="Price, high to low">Price, high to low</option>
-									</select>
+											<option value="Price, low to high">Price, low to high</option>
+											<option value="Price, high to low">Price, high to low</option>
+										</select>
+									</div>
+									<!--Category-->
+									<div class="dropdown col-xl-2 col-lg-3 col-12">
+										<button
+											class="dropdownButton btn btn-filter dropdown-toggle d-flex justify-content-between align-items-center w-100 text-start px-3 gap-6"
+											type="button" id="dropdownButton" data-bs-toggle="dropdown"
+											aria-expanded="false" data-dropdown="category" data-bs-auto-close="outside">
+											<span>Category</span>
+										</button>
+										<ul class="dropdown-menu p-3 dropdownSelect" data-dropdown="category">
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="categoryOne" />
+													<label class="form-check-label" for="categoryOne">Kitchen</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="categoryTwo" />
+													<label class="form-check-label" for="categoryTwo">Decoration</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox"
+														id="categoryThree" />
+													<label class="form-check-label" for="categoryThree">Lighting</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="categoryFour" />
+													<label class="form-check-label" for="categoryFour">Office</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="categoryFive" />
+													<label class="form-check-label" for="categoryFive">Bedroom</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!--Type-->
+									<div class="dropdown  col-xl-2 col-lg-3 col-12">
+										<button
+											class="dropdownButton btn btn-filter dropdown-toggle d-flex justify-content-between align-items-center w-100 text-start px-3 gap-6"
+											type="button" id="dropdownButtonSecond" data-bs-toggle="dropdown"
+											aria-expanded="false" data-dropdown="type" data-bs-auto-close="outside">
+											<span>Type</span>
+										</button>
+										<ul class="dropdown-menu p-3 dropdownSelect" data-dropdown="type">
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="categorySix" />
+													<label class="form-check-label" for="categorySix">Sofa</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox"
+														id="categorySeven" />
+													<label class="form-check-label" for="categorySeven">Lamp</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox"
+														id="categoryEight" />
+													<label class="form-check-label" for="categoryEight">Frame</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="categoryNine" />
+													<label class="form-check-label" for="categoryNine">Stool</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!--Color-->
+									<div class="dropdown  col-xl-2 col-lg-2 col-12">
+										<button
+											class="dropdownButton btn btn-filter dropdown-toggle d-flex justify-content-between align-items-center w-100 text-start px-3 gap-6"
+											type="button" id="dropdownButtonThird" data-bs-toggle="dropdown"
+											aria-expanded="false" data-dropdown="color" data-bs-auto-close="outside">
+											<span>Color</span>
+										</button>
+										<ul class="dropdown-menu p-3 dropdownSelect" data-dropdown="color">
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="colorOne" />
+													<label class="form-check-label d-flex align-items-center gap-1"
+														for="colorOne">
+														<span class="">
+															<svg xmlns="http://www.w3.org/2000/svg" width="10"
+																height="10" fill="currentColor"
+																class="bi bi-square-fill text-success"
+																viewBox="0 0 16 16">
+																<path
+																	d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+															</svg>
+														</span>
+														<span class="">Green</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="colorTwo" />
+													<label class="form-check-label d-flex align-items-center gap-1"
+														for="colorTwo">
+														<span class="">
+															<svg xmlns="http://www.w3.org/2000/svg" width="10"
+																height="10" fill="currentColor"
+																class="bi bi-square-fill text-primary"
+																viewBox="0 0 16 16">
+																<path
+																	d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+															</svg>
+														</span>
+														Black
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="colorThree" />
+													<label class="form-check-label d-flex align-items-center gap-1"
+														for="colorThree">
+														<span class="">
+															<svg xmlns="http://www.w3.org/2000/svg" width="10"
+																height="10" fill="currentColor"
+																class="bi bi-square-fill text-danger"
+																viewBox="0 0 16 16">
+																<path
+																	d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+															</svg>
+														</span>
+														Red
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="colorFour" />
+													<label class="form-check-label d-flex align-items-center gap-1"
+														for="colorFour">
+														<span class="">
+															<svg xmlns="http://www.w3.org/2000/svg" width="10"
+																height="10" fill="currentColor"
+																class="bi bi-square-fill text-light"
+																viewBox="0 0 16 16">
+																<path
+																	d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+															</svg>
+														</span>
+														Gray
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-
+							<!--Selected filter-->
+							<div class="mb-4 d-flex flex-column flex-lg-row flex-row justify-content-between gap-4">
+								<div class="d-flex gap-2 flex-wrap align-items-lg-start">
+									<button type="button" class="btn btn-sm btn-light d-flex align-items-center gap-2">
+										In Stock
+										<i class="bi bi-x lh-1"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-light d-flex align-items-center gap-2">
+										Black
+										<i class="bi bi-x lh-1"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-light d-flex align-items-center gap-2">
+										Brand
+										<i class="bi bi-x lh-1"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-light d-flex align-items-center gap-2">
+										Kitchen
+										<i class="bi bi-x lh-1"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-light d-flex align-items-center gap-2">
+										$10 - $259
+										<i class="bi bi-x lh-1"></i>
+									</button>
+									<button type="button" class="btn btn-sm btn-focus-none">Clear all</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row gy-6 gx-4">
@@ -803,37 +1013,13 @@
 						<div class="col-xl-3 col-lg-4 col-md-6">
 							<div class="product-card">
 								<div class=" text-center product-card-img mb-4">
-									<a href="#!"><img src="./assets/images/aasonjihye/랑에1.png"
+									<a href="#!"><img src="./assets/images/aasonjihye/포르토피노오토.png"
 											alt="product image" class="img-fluid">
-										<img src="./assets/images/aasonjihye/랑에1B.png" alt="product image"
+										<img src="./assets/images/aasonjihye/포르토피노오토2.png" alt=""
 											class="img-fluid product-img-hover"></a>
-									<div class="product-card-btn">
-										<button type="button" class="btn btn-primary btn-icon btn-sm animate-pulse "
-											data-bs-toggle="modal" data-bs-target="#quickViewModal">
-
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-												fill="currentColor" class="bi bi-eye animate-target"
-												viewBox="0 0 16 16">
-												<path
-													d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
-												<path
-													d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
-											</svg>
-										</button>
-										<button type="button" class="btn btn-primary  btn-sm quick-add-btn"
-											data-product-name="Sofa with wood legs" data-product-price="34.00"
-											data-product-img="./assets/images/aasonjihye/랑에1.png">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path
-													d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-											</svg>
-											Quick add
-										</button>
-									</div>
 								</div>
 								<div class="d-flex justify-content-between align-items-center mb-2">
-									<span class="small fw-medium text-uppercase">A.Lange&Sohne</span>
+									<span class="small fw-medium text-uppercase">IWC</span>
 									<div class="d-flex gap-3 align-items-center">
 										<span class="">
 											4.3
@@ -857,10 +1043,8 @@
 								</div>
 								<div class="mb-3">
 									<h3 class="fs-6 mb-0 product-heading d-inline-block text-truncate"> <a
-											href="#!">Sofa with
-											wood
-											legs</a></h3>
-									<p class="mb-0 lh-1 text-dark fw-semibold">$34.00</p>
+											href="#!">IW371617</a></h3>
+									<p class="mb-0 lh-1 text-dark fw-semibold">₩13,000,000</p>
 								</div>
 
 								<div role="group" aria-label="Basic radio toggle button group">
@@ -882,9 +1066,9 @@
 							<div class="product-card">
 								<div class="text-center mb-4 product-card-img">
 									<a href="#!">
-										<img src="./assets/images/aasonjihye/오디세우스.png" alt="product image"
+										<img src="./assets/images/product/product-img-2.jpg" alt="product image"
 											class="img-fluid" />
-										<img src="./assets/images/aasonjihye/오디세우스 2.png" alt="product image"
+										<img src="./assets/images/product/product-img-hover-2.jpg" alt="product image"
 											class="img-fluid product-img-hover" />
 									</a>
 									<div class="product-card-btn">
@@ -910,11 +1094,6 @@
 											</svg>
 											Quick add
 										</button>
-									</div>
-									<div
-										class="position-absolute top-0 p-2 px-3 d-flex flex-column gap-2 align-items-start">
-										<span class="badge bg-info">New</span>
-										<span class="badge bg-dark">Sold Out</span>
 									</div>
 								</div>
 								<div class="d-flex justify-content-between align-items-center mb-2">
@@ -1058,6 +1237,11 @@
 											</svg>
 											Quick add
 										</button>
+									</div>
+									<div
+										class="position-absolute top-0 p-2 px-3 d-flex flex-column gap-2 align-items-start">
+										<span class="badge bg-info">New</span>
+										<span class="badge bg-dark">Sold Out</span>
 									</div>
 								</div>
 								<div class="d-flex justify-content-between align-items-center mb-2">
@@ -1412,6 +1596,7 @@
 								</div>
 							</div>
 						</div>
+						<!--Product-->
 						<!--Pagination-->
 						<div class="col-12 mt-8">
 							<nav aria-label="Page navigation example">
@@ -1430,7 +1615,7 @@
 			</div>
 		</div>
 	</section>
-	<!--Product no filter end-->
+	<!--Product top filter end-->
 	<footer class="pt-lg-8 pt-5 bg-light">
 		<div class="container">
 			<div class="row mb-8">
@@ -2072,20 +2257,18 @@
 
 	<!-- Theme JS -->
 	<script src="./assets/js/theme.min.js"></script>
-
 	<script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-
 	<script src="./assets/js/vendors/choice.js"></script>
-
 	<script src="./assets/js/vendors/flag.js"></script>
-
 	<script src="./assets/js/vendors/add-to-cart.js"></script>
 	<script src="./assets/js/vendors/qty-input.js"></script>
+
 	<script src="./assets/js/vendors/chechbox-filter.js"></script>
 	<script src="./assets/js/vendors/btn-scrolltop.js"></script>
 	<script src="./assets/js/vendors/color-change.js"></script>
 	<script src="./assets/libs/drift-zoom/dist/Drift.min.js"></script>
 	<script src="./assets/js/vendors/drift.js"></script>
+
 </body>
 
 </html>
