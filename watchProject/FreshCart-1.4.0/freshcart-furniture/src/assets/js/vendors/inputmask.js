@@ -97,13 +97,19 @@
 	if (dateMaskElement) {
 		// Initialize the IMask
 		var dateMask = IMask(dateMaskElement, {
-			mask: 'MM{/}YY', // Mask pattern for MM/YY
+			mask: 'MM{/}DD{/}YY', // Mask pattern for MM/YY
 			lazy: false, // Keeps the placeholder visible even when the input is empty
 			blocks: {
 				MM: {
 					mask: IMask.MaskedRange, // Mask range for months
 					from: 1,
 					to: 12,
+					maxLength: 2,
+				},
+				DD: {
+					mask: IMask.MaskedRange, // Mask range for date
+					from: 1,
+					to: 31,
 					maxLength: 2,
 				},
 				YY: {
@@ -114,6 +120,36 @@
 				},
 			},
 		});
+
+
+		var dateMaskElement = document.getElementById('dy-mask2');
+		if (dateMaskElement) {
+			// IMask 초기화
+			var dateMask = IMask(dateMaskElement, {
+				mask: 'YYYY{/}MM{/}DD', // YYYY/MM/DD 형식으로 마스크 패턴 변경
+				lazy: false, // 입력이 비어 있어도 자리 표시자가 계속 보이도록 설정
+				blocks: {
+					YYYY: {
+						mask: IMask.MaskedRange, // 연도를 위한 마스크
+						from: 2023, // 현재 연도부터 시작 (2023년)
+						to: 2099, // 최대 2099년까지 허용
+						maxLength: 4, // 연도는 4자리
+					},
+					MM: {
+						mask: IMask.MaskedRange, // 월을 위한 마스크
+						from: 1,
+						to: 12,
+						maxLength: 2, // 월은 2자리
+					},
+					DD: {
+						mask: IMask.MaskedRange, // 일을 위한 마스크
+						from: 1,
+						to: 31,
+						maxLength: 2, // 일은 2자리
+					},
+				},
+			});
+		}
 
 		// Optional: Handle the mask on accept event
 		dateMask.on('accept', function () {
