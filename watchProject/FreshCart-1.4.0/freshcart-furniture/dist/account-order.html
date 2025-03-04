@@ -342,12 +342,10 @@
 													<a class="dropdown-item dropdown-list-group-item dropdown-toggle"
 														href="#!">거래 관리</a>
 													<ul class=" dropdown-menu  px-1 pb-4 pt-0 p-xl-3">
-														<li><a class="dropdown-item" href="./shopping-checkout.html">주문 하기</a>
+														<li><a class="dropdown-item" href="./shopping-checkout.html">본인 인증 하기</a>
 														</li>
 														<li><a class="dropdown-item" href="./account-payment.html">결제 카드</a>
-														</li>
-														<li><a class="dropdown-item" href="./shopping-cart.html">장바구니</a>
-														</li>
+														</li> 
 														<li><a class="dropdown-item" href="./account-order.html">거래 내역</a>
 														</li>
 														<!-- <li><a class="dropdown-item" href="./checkout-thankyou.html">주문 목록</a>
@@ -409,26 +407,26 @@
 					<div class="row g-3 mb-4">
 						<div class="col-lg-6">
 							<!--Heading-->
-							<h1 class="mb-0 h2">Orders</h1>
+							<h1 class="mb-0 h2">주문 목록</h1>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<select data-choices-innertext data-choices-innertext-removeitembutton="true"
 								data-choices-classname="form-select" aria-label="Default select example">
 								<!-- <option value="">Select status</option> -->
-								<option value="In progress" data-color="bg-info">In progress</option>
-								<option value="Canceled" data-color="bg-primary">Canceled</option>
-								<option value="Delivered" data-color="bg-success">Delivered</option>
-								<option value="Delayed" data-color="bg-warning">Delayed</option>
+								<option value="In progress" data-color="bg-info">진행중</option>
+								<option value="Canceled" data-color="bg-primary">취소</option>
+								<option value="Delivered" data-color="bg-success">지연</option>
+								<option value="Delayed" data-color="bg-warning">전달됨</option>
 							</select>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<select data-choices data-choices-removeitembutton="true"
 								data-choices-classname="form-select">
-								<option value="all-time">For all time</option>
-								<option value="last-year">For last year</option>
-								<option value="last-3-months">For last 3 months</option>
-								<option value="last-30-days">For last 30 days</option>
-								<option value="last-week">For last week</option>
+								<option value="all-time">지난 기간 조회</option>
+								<option value="last-year">1년전</option>
+								<option value="last-3-months">3개월전</option>
+								<option value="last-30-days">30일전</option>
+								<option value="last-week">지난주</option>
 							</select>
 						</div>
 
@@ -437,8 +435,8 @@
 					<!--Order-->
 					<div class="card mb-3">
 						<div class="card-header d-flex justify-content-between px-3 py-3">
-							<span class="text-dark fw-semibold">Order ID: 78A6543D210</span>
-							<span class="badge text-bg-info">In progress</span>
+							<span class="text-dark fw-semibold">주문 ID: 78A6543D210</span>
+							<span class="badge text-bg-info">진행중</span>
 
 						</div>
 						<div class="card-body px-3 py-3">
@@ -457,7 +455,7 @@
 									<div class="row align-items-center gy-3">
 										<div class="col-lg-5">
 											<div class="d-flex flex-column">
-												<span>Estimated Arrival</span>
+												<span>예상 도착</span>
 												<span class="text-dark fw-medium">Feb 6, 2025</span>
 
 											</div>
@@ -465,8 +463,8 @@
 										</div>
 										<div class="col-lg-4">
 											<div class="d-flex flex-column">
-												<span>Order value</span>
-												<span class="text-dark fw-medium">$69.00</span>
+												<span>결제 금액</span>
+												<span class="text-dark fw-medium">₩13,000,000</span>
 
 											</div>
 
@@ -475,8 +473,7 @@
 											<div class="d-flex flex-column">
 
 												<a class="text-link" href="#!" data-bs-toggle="offcanvas"
-													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View
-													Details</a>
+													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">자세한 내용보기</a>
 
 
 											</div>
@@ -496,8 +493,8 @@
 					<!--Order-->
 					<div class="card mb-3">
 						<div class="card-header d-flex justify-content-between px-3 py-3">
-							<span class="text-dark fw-semibold">Order ID: 56H78G90F12</span>
-							<span class="badge text-bg-success">Delivered</span>
+							<span class="text-dark fw-semibold">주문 ID: 56H78G90F12</span>
+							<span class="badge text-bg-success">전달됨</span>
 
 						</div>
 						<div class="card-body px-3 py-3">
@@ -520,7 +517,7 @@
 									<div class="row align-items-center gy-3">
 										<div class="col-lg-5">
 											<div class="d-flex flex-column">
-												<span>Estimated Arrival</span>
+												<span>예상 도착</span>
 												<span class="text-dark fw-medium">Des 12, 2024</span>
 
 											</div>
@@ -528,8 +525,8 @@
 										</div>
 										<div class="col-lg-4">
 											<div class="d-flex flex-column">
-												<span>Order value</span>
-												<span class="text-dark fw-medium">$369.00</span>
+												<span>결제 금액</span>
+												<span class="text-dark fw-medium">₩11.300,000</span>
 
 											</div>
 
@@ -537,8 +534,7 @@
 										<div class="col-lg-3">
 											<div class="d-flex flex-column">
 												<a class="text-link" href="#!" data-bs-toggle="offcanvas"
-													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View
-													Details</a>
+													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">자세한 내용보기</a>
 
 											</div>
 
@@ -557,8 +553,8 @@
 					<!--Order-->
 					<div class="card mb-3">
 						<div class="card-header d-flex justify-content-between px-3 py-3">
-							<span class="text-dark fw-semibold">Order ID: 45C6789D123</span>
-							<span class="badge text-bg-danger">Canceled</span>
+							<span class="text-dark fw-semibold">주문 ID: 45C6789D123</span>
+							<span class="badge text-bg-danger">취소</span>
 
 						</div>
 						<div class="card-body px-3 py-3">
@@ -576,7 +572,7 @@
 									<div class="row align-items-center gy-3">
 										<div class="col-lg-5">
 											<div class="d-flex flex-column">
-												<span>Estimated Arrival</span>
+												<span>예상 도착</span>
 												<span class="text-dark fw-medium">Feb 6, 2025</span>
 
 											</div>
@@ -584,8 +580,8 @@
 										</div>
 										<div class="col-lg-4">
 											<div class="d-flex flex-column">
-												<span>Order value</span>
-												<span class="text-dark fw-medium">$69.00</span>
+												<span>결제 금액</span>
+												<span class="text-dark fw-medium">₩21.000,000</span>
 
 											</div>
 
@@ -593,8 +589,7 @@
 										<div class="col-lg-3">
 											<div class="d-flex flex-column">
 												<a class="text-link" href="#!" data-bs-toggle="offcanvas"
-													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View
-													Details</a>
+													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">자세한 내용보기</a>
 
 											</div>
 
@@ -613,8 +608,8 @@
 					<!--Order-->
 					<div class="card mb-5">
 						<div class="card-header d-flex justify-content-between px-3 py-3">
-							<span class="text-dark fw-semibold">Order ID: 12H34G56F78</span>
-							<span class="badge text-bg-success">Delivered</span>
+							<span class="text-dark fw-semibold">주문 ID: 12H34G56F78</span>
+							<span class="badge text-bg-success">진행중</span>
 
 						</div>
 						<div class="card-body px-3 py-3">
@@ -639,7 +634,7 @@
 									<div class="row align-items-center gy-3">
 										<div class="col-lg-5">
 											<div class="d-flex flex-column">
-												<span>Estimated Arrival</span>
+												<span>예상 도착</span>
 												<span class="text-dark fw-medium">Des 12, 2024</span>
 
 											</div>
@@ -647,8 +642,8 @@
 										</div>
 										<div class="col-lg-4">
 											<div class="d-flex flex-column">
-												<span>Order value</span>
-												<span class="text-dark fw-medium">$369.00</span>
+												<span>결제 금액</span>
+												<span class="text-dark fw-medium">₩61,000,000</span>
 
 											</div>
 
@@ -656,8 +651,7 @@
 										<div class="col-lg-3">
 											<div class="d-flex flex-column">
 												<a class="text-link" href="#!" data-bs-toggle="offcanvas"
-													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View
-													Details</a>
+													data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">자세한 내용보기</a>
 
 											</div>
 

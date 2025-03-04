@@ -341,12 +341,10 @@
 													<a class="dropdown-item dropdown-list-group-item dropdown-toggle"
 														href="#!">거래 관리</a>
 													<ul class=" dropdown-menu  px-1 pb-4 pt-0 p-xl-3">
-														<li><a class="dropdown-item" href="./shopping-checkout.html">주문 하기</a>
+														<li><a class="dropdown-item" href="./shopping-checkout.html">본인 인증 하기</a>
 														</li>
 														<li><a class="dropdown-item" href="./account-payment.html">결제 카드</a>
-														</li>
-														<li><a class="dropdown-item" href="./shopping-cart.html">장바구니</a>
-														</li>
+														</li> 
 														<li><a class="dropdown-item" href="./account-order.html">거래 내역</a>
 														</li>
 														<!-- <li><a class="dropdown-item" href="./checkout-thankyou.html">주문 목록</a>
@@ -407,12 +405,9 @@
 				<div class="col-lg-6">
 					<!--Heading-->
 					<div class="text-center">
-						<h1 class="display-5 fw-bold">Order tracking</h1>
+						<h1 class="display-5 fw-bold">배송 조회</h1>
 						<p class="mb-0">
-							To track your order please enter your Order ID in the box below and press the "Track"
-							button. This was
-							given to you on your receipt and in the confirmation email you should have
-							received.
+							배송 조회를 위해  ID를 입력하고 "조회" 버튼을 누르세요. 이는 영수증과 받았어야 할 확인 이메일에 제공되었습니다.
 						</p>
 					</div>
 				</div>
@@ -430,20 +425,20 @@
 							<form class="needs-validation" novalidate="">
 								<!--Order id-->
 								<div class="mb-3">
-									<label for="orderID" class="form-label">Order ID</label>
+									<label for="orderID" class="form-label">ID</label>
 									<input type="text" name="orderID" id="orderID" class="form-control"
-										placeholder="Found in your order confirmation email." required />
-									<div class="invalid-feedback">Please enter Order ID.</div>
+										placeholder="배송 조회를 위해ID를 입력해 주세요." required />
+									<div class="invalid-feedback">ID를 입력해 주세요.</div>
 								</div>
 								<!--Billing email-->
 								<div class="mb-3">
-									<label for="orderEmail" class="form-label">Billing email</label>
+									<label for="orderEmail" class="form-label">Email</label>
 									<input type="email" name="orderEmail" id="orderEmail" class="form-control"
-										placeholder="Email you used during checkout." required />
-									<div class="invalid-feedback">Please enter Email ID.</div>
+										placeholder="영수증 조회를 위해 Email를 입력하세요." required />
+									<div class="invalid-feedback">Email를 입력해 주세요.</div>
 								</div>
 								<div class="d-grid">
-									<button type="submit" class="btn btn-primary">Track</button>
+									<button type="submit" class="btn btn-primary">조회</button>
 								</div>
 							</form>
 						</div>
