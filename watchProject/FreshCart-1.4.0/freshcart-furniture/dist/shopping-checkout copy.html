@@ -357,9 +357,7 @@
 										<li><a class="dropdown-item" href="./account-reviews.html">리뷰</a>
 										</li>
 										<li><a class="dropdown-item" href="./account-personal-info.html">개인 정보</a>
-										</li>
-										<li><a class="dropdown-item" href="./account-address.html">주소</a>
-										</li>
+										</li> 
 										<li><a class="dropdown-item" href="./account-notification.html">알림 환경 설정</a>
 										</li>
 									</ul>
@@ -577,14 +575,21 @@
 											</div>
 											
 											<div class="col-md-4 col-12">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
-													<label class="form-label" for="nameoncard">1종/2종</label>
-													<input type="text" class="form-control" placeholder="성 ( First Name )"
-														id="nameoncard" required />
+													<label class="form-label" for="nameoncard">운전 면허증 유형</label>
+													<select data-choices data-choices-removeitembutton="true"
+														data-choices-classname="form-select">
+														<option selected>1종/2종</option>
+														<option value="">1종/대형</option>
+														<option value="1종/보통">1종/보통</option>
+														<option value="1종/특수 (대형견인)">1종/특수 (대형견인)</option>
+														<option value="1종/특수 (구난차)">1종/특수 (구난차)</option>
+														<option value="2종/보통">2종/보통</option>
+														<option value="2종/소형">2종/소형</option>
+														<option value="2종/원동기 장치 자전거">2종/원동기 장치 자전거</option>
+													</select>
 												</div>
 											</div>
-											
 											<div class="col-md-4 col-12">
 												<!-- input -->
 												<div class="mb-5 mb-lg-0">
