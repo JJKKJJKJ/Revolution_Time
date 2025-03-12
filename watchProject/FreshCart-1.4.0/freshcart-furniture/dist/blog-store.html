@@ -21,7 +21,7 @@
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="./assets/css/theme.min.css">
 
-	<title>Account Review eCommerce HTML Template - FreshCart Furniture</title>
+	<title>Blog eCommerce HTML Template - FreshCart Furniture</title>
 </head>
 
 <body>
@@ -85,7 +85,7 @@
 								<li class="nav-item dropdown border-bottom border-bottom-xl-0">
 									<a class="nav-link dropdown-toggle" href="#!" role="button"
 										data-bs-toggle="dropdown" aria-expanded="false">시계 정보</a>
-									<div class="dropdown-menu p-xl-4">
+									<div class="dropdown-menu  p-xl-4">
 										<div class="row row-cols-lg-8 row-cols-8">
 											<div class="col">
 												<div class="dropdown-header">Revolution_Time</div>
@@ -102,11 +102,10 @@
 															href="./product-grid.html">브랜드 추천 받기</a>
 													</li> 
 												</ul>
-											</div>
+											</div> 
 										</div>
 									</div>
 								</li>
-
 								<li class="nav-item dropdown w-100 w-lg-auto border-bottom border-bottom-xl-0">
 									<a class="nav-link dropdown-toggle" href="#!" role="button"
 										data-bs-toggle="dropdown" aria-expanded="false">커뮤니케이션</a>
@@ -124,7 +123,8 @@
 									</ul>
 								</li>
 								
-								<li	class="nav-item dropdown w-100 w-lg-auto dropdown-fullwidth border-bottom border-bottom-xl-0">
+								<li
+									class="nav-item dropdown w-100 w-lg-auto dropdown-fullwidth border-bottom border-bottom-xl-0">
 									<a class="nav-link dropdown-toggle" href="#!" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">브랜드 컬랙션</a>
 									<div class="dropdown-menu pb-0">
@@ -348,8 +348,7 @@
 										</li> 
 										<li><a class="dropdown-item" href="./account-notification.html">알림 환경 설정</a>
 										</li>
-
-									</ul>
+									</ul>							
 					</div>
 					<div class="d-flex align-items-center gap-3">
 						<a class="d-none d-md-block" data-bs-toggle="offcanvas" href="#offcanvasSearchProduct"
@@ -385,36 +384,39 @@
 			</div>
 		</div>
 	</nav>
-	<section class="py-lg-8 py-5">
+	<!--Pageheader start-->
+	
+	<!--Pageheader end-->
+	<!--Nav items start-->
+	<div class="pt-lg-10 py-6">
 		<div class="container">
-			<div class="row">
-				<!--Account sidebar start-->
-				<div class="col-lg-3 col-md-4">
-
-					<!-- Navbar -->
-					<div class="mb-4 text-center text-md-start">
-						<div class="d-lg-flex align-items-center gap-3 border p-3 ">
-							<img src="./assets/images/avatar/칼리버 8800.png" alt=""
-								class="avatar avatar-lg rounded-circle">
-							<div class="mt-2 mt-lg-0 overflow-hidden">
-								<h3 class="mb-0 fs-5">Son ji hye</h3>
-								<p class="mb-0 small text-truncate">spergals950814@gmail.com</p>
-							</div>
-						</div>
-					</div>
-					<div class="d-md-none text-center d-grid">
-						<button class="btn btn-light mb-3 d-flex align-items-center justify-content-between"
-							type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccountMenu"
-							aria-expanded="false" aria-controls="collapseAccountMenu">
-							Account Menu
-							<i class="bi bi-chevron-down ms-2"></i>
-						</button>
-					</div>
-					<div class="collapse d-md-block" id="collapseAccountMenu">
-				
-					</div>
+			<div class="row mb-6">
+				<div class="col-12">
+					<ul class="nav nav-pills">
+						<li class="nav-item"><a href="./blog.html" class="nav-link ">자유 게시판</a></li>
+						<li class="nav-item"><a href="./blog-Q&A.html" class="nav-link">지식인Q&A</a></li>
+						<li class="nav-item"><a href="./blog-store.html" class="nav-link active">매장 상황</a></li>
+						<li class="nav-item"><a href="./blog-issue.html" class="nav-link">New Issue</a></li>
+						<li class="nav-item"><a href="#!" class="nav-link">Interior Design</a></li>
+					</ul>
 				</div>
-				<!--Account sidebar end-->
+			</div>
+			<div class="row gy-4">
+				<!--  -->
+				
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Nav items end-->
+	<!--Blog start-->
+	<section class="pb-6 pb-lg-10">
+		<div class="container">
+			<div class="row gy-4">
+				
+
+
 				<div class="col-lg-9 col-md-8">
 					<div class="row g-3 mb-4 align-items-center">
 						<div class="col-lg-8 col-md-5 col-12">
@@ -655,10 +657,16 @@
 					</div>
 				</div>
 
+				<div class="col-12 text-center mt-6">
+					<a href="#!" class="btn btn-primary d-inline-flex align-items-center gap-2">
+						<span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+						Load more
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
-
+	<!--Blog end-->
 	<footer class="pt-lg-8 pt-5 bg-light">
 		<div class="container">
 			<div class="row mb-8">
@@ -1083,99 +1091,6 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-body p-md-6 p-4">
-					<div class="d-flex justify-content-between align-items-center mb-4">
-						<h2 class="modal-title fs-3">Share your thoughts</h2>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div>
-						<form class="row needs-validation" novalidate>
-							<div class="mb-3 col-12">
-								<h3 class="h6">Rate your experience *</h3>
-								<div class="rater"></div>
-							</div>
-							<div class="mb-3 col-12">
-								<label for="writeReview" class="form-label">Write a review *</label>
-								<textarea id="writeReview" class="form-control" rows="5"
-									placeholder="Tell us what you like or dislike" required></textarea>
-								<div class="invalid-feedback">Please write a review.</div>
-							</div>
-							<div class="mb-3 col-12">
-								<label for="headline" class="form-label">Add a headline *</label>
-								<input type="text" id="headline" class="form-control"
-									placeholder="Summarize your experience" required />
-								<div class="invalid-feedback">Please enter a headline.</div>
-							</div>
-							<div class="mb-3 col-12 col-lg-6">
-								<label for="yourName" class="form-label">Your Name *</label>
-								<input type="text" id="yourName" class="form-control" placeholder="" required />
-								<div class="invalid-feedback">Please enter your name.</div>
-							</div>
-							<div class="mb-3 col-12 col-lg-6">
-								<label for="email" class="form-label">Your email address *</label>
-								<input type="email" id="email" class="form-control mb-1" placeholder="" required />
-								<div class="invalid-feedback">Please enter your email.</div>
-								<small class="lh-sm">We’ll send you an email to verify this review came from
-									you.</small>
-							</div>
-							<div class="mb-5 col-12">
-								<!-- Upload Button -->
-								<h3 class="h6 mb-3">Add Media</h3>
-								<label class="btn btn-outline-primary d-inline-flex align-items-center gap-1"
-									for="fileInput">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-										class="bi bi-upload" viewBox="0 0 16 16">
-										<path
-											d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-										<path
-											d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
-									</svg>
-									Upload
-								</label>
-								<input type="file" id="fileInput" multiple accept="image/*,video/*" />
-								<br />
-								<small class="mt-2 d-block">Upload up to 10 images and 3 videos (max. file size 2
-									GB)</small>
-
-								<!-- Upload Status -->
-								<div id="uploadStatus"></div>
-
-								<!-- Display Preview -->
-								<div id="previewContainer"></div>
-							</div>
-							<div class="mb-3 col-12">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="gridCheck" required />
-									<label class="form-check-label" for="gridCheck">
-										I agree to the
-										<span>Terms & Conditions *</span>
-									</label>
-									<div class="invalid-feedback">
-										You must agree before submitting.
-									</div>
-								</div>
-							</div>
-							<div class="mb-3 col-12">
-								<div
-									class="d-md-flex flex-md-row flex-column align-items-center justify-content-between ">
-									<div>*required fields</div>
-									<div class="d-flex gap-2 mt-2 mt-md-0">
-										<button type="button" class="btn btn-secondary"
-											data-bs-dismiss="modal">Close</button>
-										<button type="submit" class="btn btn-primary">Send</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="./assets/libs/rater-js/index.js"></script>
 	<!-- Libs JS -->
 	<script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Swiper JS -->
@@ -1184,146 +1099,12 @@
 
 	<!-- Theme JS -->
 	<script src="./assets/js/theme.min.js"></script>
-	<!--offcanvas-->
-	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightReview"
-		aria-labelledby="offcanvasRightReviewLabel" style="width: 546px;">
-		<div class="offcanvas-header px-5">
-			<h4 class="offcanvas-title mb-0" id="offcanvasRightReviewLabel">My Review
-			</h4>
-			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-		</div>
-		<div class="offcanvas-body px-5">
-			<div class="card mb-4">
-				<div class="card-body">
-					<div class="d-flex align-items-start cart-item gap-4 " data-product-price="34">
-						<img src="./assets/images/product/product-img-2.jpg" alt="Sofa with wood legs"
-							class="icon-shape icon-xxl">
-						<div class="d-flex flex-column gap-2 ">
-							<h6 class="mb-0">Stylish Wooden Table Lamp</h6>
-							<div class="d-flex flex-row gap-2 align-items-center">
-								<p class="mb-0 lh-1 text-dark fw-semibold">$69.00</p>
-								<small class="text-dark fw-medium">Qty: 1</small>
-							</div>
-						</div>
 
-					</div>
-				</div>
-
-			</div>
-
-			<div class="d-flex flex-column gap-4">
-
-				<div class="d-flex flex-row justify-content-between align-items-center">
-					<div class="d-flex flex-row  gap-2">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-							class="bi bi-star-fill align-baseline text-warning" viewBox="0 0 16 16">
-							<path
-								d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-							class="bi bi-star-fill align-baseline text-warning" viewBox="0 0 16 16">
-							<path
-								d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-							class="bi bi-star-fill align-baseline text-warning" viewBox="0 0 16 16">
-							<path
-								d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-							class="bi bi-star-fill align-baseline text-warning" viewBox="0 0 16 16">
-							<path
-								d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-							class="bi bi-star-fill align-baseline text-warning" viewBox="0 0 16 16">
-							<path
-								d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-						</svg>
-					</div>
-					<span class="">June 12, 2024</span>
-				</div>
-				<div class="d-flex flex-column gap-4">
-					<p class="mb-0"><span class="text-dark">Color: </span><span class="">Brown</span>
-					</p>
-					<div class="d-flex flex-column gap-3">
-						<div class="d-flex flex-column gap-2">
-							<h3 class="mb-0 h4">Perfect Addition to My Living Room</h3>
-							<p class="mb-0">Wooden table lamps come in an array of designs, catering to various tastes
-								and
-								aesthetics. For a <span class="text-dark">mid-century modern look</span>, opt for lamps
-								with
-								clean lines and tapered legs, often paired with a round or drum-shaped shade. These
-								designs
-								evoke a sense of retro charm while remaining contemporary.</p>
-						</div>
-						<p class="mb-0"><span class="text-dark">Pros: </span><span class="">Durability,
-								Eco-Friendly, Warm Light Diffusion</span></p>
-						<p class="mb-0"><span class="text-dark">Cons: </span><span class="">Heat
-								Sensitivity
-							</span></p>
-					</div>
-					<div class="d-flex flex-row gap-2 justify-content-end">
-						<a href="#!" class="">
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-								class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-								<path
-									d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z">
-								</path>
-							</svg>
-							0
-						</a>
-						<a href="#!" class="">
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-								class="bi bi-hand-thumbs-down" viewBox="0 0 16 16">
-								<path
-									d="M8.864 15.674c-.956.24-1.843-.484-1.908-1.42-.072-1.05-.23-2.015-.428-2.59-.125-.36-.479-1.012-1.04-1.638-.557-.624-1.282-1.179-2.131-1.41C2.685 8.432 2 7.85 2 7V3c0-.845.682-1.464 1.448-1.546 1.07-.113 1.564-.415 2.068-.723l.048-.029c.272-.166.578-.349.97-.484C6.931.08 7.395 0 8 0h3.5c.937 0 1.599.478 1.934 1.064.164.287.254.607.254.913 0 .152-.023.312-.077.464.201.262.38.577.488.9.11.33.172.762.004 1.15.069.13.12.268.159.403.077.27.113.567.113.856s-.036.586-.113.856c-.035.12-.08.244-.138.363.394.571.418 1.2.234 1.733-.206.592-.682 1.1-1.2 1.272-.847.283-1.803.276-2.516.211a10 10 0 0 1-.443-.05 9.36 9.36 0 0 1-.062 4.51c-.138.508-.55.848-1.012.964zM11.5 1H8c-.51 0-.863.068-1.14.163-.281.097-.506.229-.776.393l-.04.025c-.555.338-1.198.73-2.49.868-.333.035-.554.29-.554.55V7c0 .255.226.543.62.65 1.095.3 1.977.997 2.614 1.709.635.71 1.064 1.475 1.238 1.977.243.7.407 1.768.482 2.85.025.362.36.595.667.518l.262-.065c.16-.04.258-.144.288-.255a8.34 8.34 0 0 0-.145-4.726.5.5 0 0 1 .595-.643h.003l.014.004.058.013a9 9 0 0 0 1.036.157c.663.06 1.457.054 2.11-.163.175-.059.45-.301.57-.651.107-.308.087-.67-.266-1.021L12.793 7l.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581s-.027-.414-.075-.581c-.05-.174-.111-.273-.154-.315l-.353-.354.353-.354c.047-.047.109-.176.005-.488a2.2 2.2 0 0 0-.505-.804l-.353-.354.353-.354c.006-.005.041-.05.041-.17a.9.9 0 0 0-.121-.415C12.4 1.272 12.063 1 11.5 1">
-								</path>
-							</svg>
-							0
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="d-grid mt-6">
-				<a href="#!"
-					class="btn btn-outline-warning  d-inline-flex align-items-center justify-content-center gap-2">
-
-					<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M26.6667 11.1666H5.33333C4.59695 11.1666 4 11.7636 4 12.5V15.1666C4 15.903 4.59695 16.5 5.33333 16.5H26.6667C27.403 16.5 28 15.903 28 15.1666V12.5C28 11.7636 27.403 11.1666 26.6667 11.1666Z"
-							stroke="#EAB308" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-						<path d="M16 11.1666V28.5" stroke="#EAB308" stroke-width="1.5" stroke-linecap="round"
-							stroke-linejoin="round" />
-						<path
-							d="M25.3334 16.5V25.8333C25.3334 26.5406 25.0525 27.2189 24.5524 27.719C24.0523 28.219 23.374 28.5 22.6667 28.5H9.33341C8.62617 28.5 7.94789 28.219 7.4478 27.719C6.9477 27.2189 6.66675 26.5406 6.66675 25.8333V16.5"
-							stroke="#EAB308" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-						<path
-							d="M10.0001 11.1666C9.11603 11.1666 8.26818 10.8155 7.64306 10.1903C7.01794 9.56521 6.66675 8.71736 6.66675 7.83331C6.66675 6.94925 7.01794 6.1014 7.64306 5.47628C8.26818 4.85116 9.11603 4.49997 10.0001 4.49997C11.2863 4.47756 12.5468 5.10165 13.6171 6.29085C14.6873 7.48006 15.5178 9.17918 16.0001 11.1666C16.4824 9.17918 17.3128 7.48006 18.3831 6.29085C19.4534 5.10165 20.7138 4.47756 22.0001 4.49997C22.8841 4.49997 23.732 4.85116 24.3571 5.47628C24.9822 6.1014 25.3334 6.94925 25.3334 7.83331C25.3334 8.71736 24.9822 9.56521 24.3571 10.1903C23.732 10.8155 22.8841 11.1666 22.0001 11.1666"
-							stroke="#EAB308" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-					</svg>
-
-					<span class="text-dark">You have earned +100 bonuses. </span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<!--modal-->
-
-
-	<script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-
-	<script src="./assets/js/vendors/choice.js"></script>
 	<script src="./assets/js/vendors/flag.js"></script>
-	<script src="./assets/js/vendors/add-to-cart.js"></script>
+
 	<script src="./assets/js/vendors/validation.js"></script>
 	<script src="./assets/js/vendors/btn-scrolltop.js"></script>
-	<script src="./assets/js/vendors/sidenav.js"></script>
-
-
-	<script src="./assets/js/vendors/inputmask.js"></script>
-	<script src="./assets/libs/imask/dist/imask.min.js"></script>
-
+	<script src="./assets/js/vendors/add-to-cart.js"></script>
 </body>
 
 </html>
