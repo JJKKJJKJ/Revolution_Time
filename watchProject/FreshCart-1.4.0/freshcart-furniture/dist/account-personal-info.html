@@ -113,7 +113,7 @@
 										<li><a class="dropdown-item" href="./terms-condition.html">전체 공지</a></li>
 										<li><a class="dropdown-item" href="./blog.html">자유 게시판</a></li>
 										<!-- <li><a class="dropdown-item" href="./blog-single.html">Blog Single</a></li> -->
-										<li><a class="dropdown-item" href="./account-openMarket.html">오픈 마켓</a>
+										<li><a class="dropdown-item" href="./account-openMarket.html">타임피스 마켓</a>
 										</li>
 										<!-- <li><a class="dropdown-item" href="./about.html">About us</a></li> -->
 										<!-- <li><a class="dropdown-item" href="./faq.html">FAQ</a></li> -->
@@ -335,9 +335,7 @@
 														</li>
 														
 													</ul>
-												</li>
-										<!-- <li><a class="dropdown-item" href="./account-reviews.html">리뷰</a>
-										</li> -->
+												</li> 
 										<li><a class="dropdown-item" href="./account-personal-info.html">개인 정보</a>
 										</li> 
 										<li><a class="dropdown-item" href="./account-notification.html">알림 환경 설정</a>
@@ -491,42 +489,43 @@
 												<div class="row g-3">
 													<!-- col -->
 												
-													<div class="col-md-12 col-12">
+													<div class="col-md-12 col-12"> 
 														<!-- input -->
 														<label for="formSignuplname" class="form-label visually-hidden">이름</label>
-														<input class="form-control" type="text" value="이름" aria-label="readonly input example" readonly>
-														
+														<input class="form-control" type="text" value="이름" aria-label="readonly input example" readonly style="background-color: #f2f2f2;">
 													</div>
 													<div class="col-md-6 col-6">
 														<p>*성별 선택</p>
 													</div>
 													<div class="col-md-6 col-12">
 														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" aria-label="readonly input example"required />
+															<!-- 여자 선택, disabled로 고정 -->
+															<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" aria-label="readonly input example" checked disabled />
 															<label class="form-check-label" for="inlineRadio1">여자</label>
 														</div>
-														  <div class="form-check form-check-inline">
-															  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" aria-label="readonly input example"required />
-															  <label class="form-check-label" for="inlineRadio2">남자</label>
-															</div>
+														<div class="form-check form-check-inline">
+															<!-- 남자 선택, disabled로 고정 -->
+															<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" aria-label="readonly input example" disabled />
+															<label class="form-check-label" for="inlineRadio2">남자</label>
+														</div>
 													</div>
 													<div class="col-md-4 col-12">
 														<p>*생년월일</p>
 													</div>
 													<div class="col-md-8 col-12">
 														<!-- input -->
-														<input type="date" class="form-control" value="날짜 변경" aria-label="readonly input example" readonly>
+														<input type="date" class="form-control" value="날짜 변경" aria-label="readonly input example" readonly  style="background-color: #f2f2f2;">
 														<div class="invalid-feedback">생년월일.</div>
 													</div>
 													<div class="col-12">
 														<!-- input -->
 														<label for="formSignuplname" class="form-label visually-hidden">ID</label>
-														<input class="form-control" type="text" value="ID" aria-label="readonly input example" readonly>
+														<input class="form-control" type="text" value="ID" aria-label="readonly input example" readonly  style="background-color: #f2f2f2;">
 													</div><br>
 													<div class="col-12">
 														<!-- input -->
 														<label for="formSignuplname" class="form-label visually-hidden">닉네임</label>
-														<input class="form-control" type="text" value="닉네임" aria-label="readonly input example" readonly>
+														<input class="form-control" type="text" value="닉네임" aria-label="readonly input example" readonly  style="background-color: #f2f2f2;">
 													</div><br>
 													<div class="col-12 mb-4">
 														<div class="password-field position-relative">
@@ -573,20 +572,19 @@
 													</div><br>
 													<div class="col-12 mb-4">
 														<div class="input-group mb-3">
-															<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">통신사</button>
-															<ul class="dropdown-menu">
-															  <li><a class="dropdown-item" href="#">LG_U+</a></li>
-															  <li><a class="dropdown-item" href="#">Kt</a></li>
-															  <li><a class="dropdown-item" href="#">SKT</a></li>
-															  <!-- <li><hr class="dropdown-divider"></li> -->
-															  <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-															</ul>
-															<input type="text" class="form-control" aria-label="Text input with dropdown button"placeholder="핸드폰 번호" required />
-															<div class="invalid-feedback">통신사와 전화 번호를입력해주세요</div>
-														  </div>
-														<!-- <label for="formSignuplname" class="form-label visually-hidden">ID</label>
-														<input type="text" class="form-control" id="formSignuplname"
-															placeholder="핸드폰 번호" required /> -->
+															<!-- 통신사 선택 -->
+															<select class="form-select" id="carrier" aria-label="통신사 선택" style="width: 10%;" required>
+																<option value="" disabled selected>통신사 선택</option>
+																<option value="LG_Uplus">LG U+</option>
+																<option value="KT">KT</option>
+																<option value="SKT">SKT</option>
+															</select>
+													
+															<!-- 핸드폰 번호 입력란 -->
+															<input type="text" class="form-control" aria-label="핸드폰 번호" placeholder="핸드폰 번호" style="flex-grow: 3;" required />
+															
+															<div class="invalid-feedback">통신사와 전화 번호를 입력해주세요.</div>
+														</div>
 													</div>
 			
 												

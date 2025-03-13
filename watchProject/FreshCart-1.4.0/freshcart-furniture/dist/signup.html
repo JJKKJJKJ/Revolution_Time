@@ -39,7 +39,7 @@
 									<a href="./index.html"><img src="./assets/images/logo/logo.svg" alt="" /></a>
 								</div>
 								<div class="mb-3">
-									<h1 class="fs-4 mb-0">계정을 생성하세요</h1>
+									<h1 class="fs-4 mb-0">계정 가입</h1>
 								</div>
 
 								<!-- form -->
@@ -133,22 +133,20 @@
 										</div><br>
 										<div class="col-12 mb-4">
 											<div class="input-group mb-3">
-												<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">통신사</button>
-												<ul class="dropdown-menu">
-												  <li><a class="dropdown-item" href="#">LG_U+</a></li>
-												  <li><a class="dropdown-item" href="#">Kt</a></li>
-												  <li><a class="dropdown-item" href="#">SKT</a></li>
-												  <!-- <li><hr class="dropdown-divider"></li> -->
-												  <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-												</ul>
-												<input type="text" class="form-control" aria-label="Text input with dropdown button"placeholder="핸드폰 번호" required />
-												<div class="invalid-feedback">통신사와 전화 번호를입력해주세요</div>
-											  </div>
-											<!-- <label for="formSignuplname" class="form-label visually-hidden">ID</label>
-											<input type="text" class="form-control" id="formSignuplname"
-												placeholder="핸드폰 번호" required /> -->
+												<!-- 통신사 선택 -->
+												<select class="form-select" id="carrier" aria-label="통신사 선택" style="width: 10%;" required>
+													<option value="" disabled selected>통신사 선택</option>
+													<option value="LG_Uplus">LG U+</option>
+													<option value="KT">KT</option>
+													<option value="SKT">SKT</option>
+												</select>
+										
+												<!-- 핸드폰 번호 입력란 -->
+												<input type="text" class="form-control" aria-label="핸드폰 번호" placeholder="핸드폰 번호" style="flex-grow: 3;" required />
+												
+												<div class="invalid-feedback">통신사와 전화 번호를 입력해주세요.</div>
+											</div>
 										</div>
-
 										
 										<!-- btn -->
 										<div class="col-12 d-grid"><button type="submit"
