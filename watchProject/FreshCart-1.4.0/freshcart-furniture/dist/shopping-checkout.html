@@ -390,8 +390,8 @@
 			</div>
 			<div class="col-12">
 				<!--Heading-->
-				<div class="my-5">
-					<h1 class="mb-0">본인 인증 하기</h1>
+				<div class="my-5 ">
+					<h1 class="mb-0" >본인 인증 하기</h1>
 				</div>
 			</div>
 		</div>
@@ -403,7 +403,7 @@
 			<div class="row gx-lg-6 gy-4 gy-lg-0">
 				<!--Shopping checkout detail-->
 				<div class="col-lg-8">
-					<div class="">
+					<!-- <div class=""> -->
 						<div class="d-flex justify-content-between align-items-center mb-2">
 							<h2 class="fs-5">거주지 주소</h2>
 							<a href="#!" class="text-link" data-bs-toggle="modal" data-bs-target="#addressModal">주소 추가</a>
@@ -424,28 +424,71 @@
 							<a class="text-link" data-bs-toggle="offcanvas" href="#offcanvasChange"
 								aria-controls="offcanvasChange">주소 변경</a>
 						</div>
+						
 						<div>
 							<div class="d-flex align-items-center mt-5 mb-2 justify-content-between">
 								<h3 class="fs-5">비밀 번호 입력</h3>
 							</div>
-							<form class="needs-validation" novalidate>
+							
+							<form class="needs-validation" id="passwordForm" novalidate>
 								<div class="row g-3">
 									<!-- row -->
-									
 									<div class="col-12">
 										<!-- input -->
 										<div class="password-field position-relative">
-											<label for="formSigninPassword"
-											class="form-label visually-hidden">Password</label>
+											<label for="formSigninPassword" class="form-label visually-hidden">Password</label>
 											<div class="password-field position-relative">
-												<input type="password" class="form-control fakePassword"
-												id="formSigninPassword" placeholder="*****" required />
+												<input type="password" class="form-control fakePassword" id="formSigninPassword" placeholder="*****" required />
 												<span><i class="bi bi-eye-slash passwordToggler"></i></span>
 												<div class="invalid-feedback">비밀번호를 입력하세요</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-3 d-grid" ><button type="submit" class="btn btn-primary" style="font-size: small;">비밀번호 확인</button></div>
+									<div class="col-3 d-grid">
+										<button type="submit" class="btn btn-primary" style="font-size: small;">비밀번호 확인</button>
+									</div>
+								</div>
+							</form>
+							
+							<!-- Bootstrap 5의 벨리데이션 JS 추가 -->
+							<script>
+								// 폼 벨리데이션
+								(function () {
+									'use strict'
+							
+									// 폼 요소 선택
+									var form = document.getElementById('passwordForm');
+							
+									// 폼 제출 시 유효성 검사 처리
+									form.addEventListener('submit', function (event) {
+										// 유효성 검사
+										if (!form.checkValidity()) {
+											event.preventDefault();  // 유효하지 않으면 제출을 막음
+											event.stopPropagation(); // 이벤트 전파 중단
+										}
+							
+										// 'was-validated' 클래스를 추가하여 스타일 적용
+										form.classList.add('was-validated');
+									}, false);
+								})();
+								
+								// 비밀번호 보이기/숨기기 아이콘 기능
+								const passwordInput = document.getElementById('formSigninPassword');
+								const passwordToggler = document.querySelector('.passwordToggler');
+							
+								passwordToggler.addEventListener('click', function() {
+									if (passwordInput.type === 'password') {
+										passwordInput.type = 'text';
+										passwordToggler.classList.remove('bi-eye-slash');
+										passwordToggler.classList.add('bi-eye');
+									} else {
+										passwordInput.type = 'password';
+										passwordToggler.classList.remove('bi-eye');
+										passwordToggler.classList.add('bi-eye-slash');
+									}
+								});
+							</script>
+							
 									
 								</div>
 							</form>
@@ -457,67 +500,49 @@
 							</div>
 							<div id="paymentMethod">
 								<div class="mb-2">
-									<div class="bg-light p-3 d-flex flex-md-row flex-column justify-content-between align-items-lg-center gap-2 gap-md-0"
-										data-bs-toggle="collapse" data-bs-target="#collapseCreditcard"
-										aria-expanded="true" aria-controls="collapseCreditcard">
+									<div class="bg-light p-3 d-flex flex-md-row flex-column justify-content-between align-items-lg-center gap-2 gap-md-0">
 										<div class="form-check">
-											<input class="form-check-input" type="radio" name="flexRadioDefault"
-												id="flexRadioDefault1" checked />
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked data-bs-toggle="collapse" data-bs-target="#collapseCreditcard" aria-expanded="true" aria-controls="collapseCreditcard" />
 											<label class="form-check-label" for="flexRadioDefault1">민증으로 인증하기</label>
 										</div>
 									</div>
-
-									<div class="collapse show px-4" id="collapseCreditcard"
-										data-bs-parent="#paymentMethod">
+							
+									<div class="collapse show px-4" id="collapseCreditcard" data-bs-parent="#paymentMethod">
 										<div class="row g-2 mt-4 mb-5">
-											
 											<div class="col-md-4 col-12">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">성&nbsp;(이름)</label>
-													<input type="text" class="form-control" placeholder="성 ( First Name )"
-														id="nameoncard" required />
+													<input type="text" class="form-control" placeholder="성 ( First Name )" id="nameoncard" required />
 												</div>
 											</div>
 											<div class="col-md-6 col-12">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">이름</label>
-													<input type="text" class="form-control" placeholder="이름"
-														id="nameoncard" required />
+													<input type="text" class="form-control" placeholder="이름" id="nameoncard" required />
 												</div>
 											</div>
 											<div class="col-4 md-4 mb-5">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label for="card-mask" class="form-label">주민 번호</label>
-													<input type="text" class="form-control" id="card-mask"
-														placeholder="xxxxxx-xxxxxxx" required="" />
+													<input type="text" class="form-control" id="card-mask" placeholder="xxxxxx-xxxxxxx" required />
 												</div>
 											</div>
 											<div class="col-6">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">주소</label>
-													<input type="text" class="form-control" placeholder="전입 주소"
-														id="nameoncard" required />
-
+													<input type="text" class="form-control" placeholder="전입 주소" id="nameoncard" required />
 												</div>
 											</div>
 											<div class="col-md-3 col-12">
-												<!-- input -->
 												<div class="mb-6 mb-lg-0 position-relative">
 													<label class="form-label" for="dy-mask">민증 발급 날짜</label>
-													<input type="text" class="form-control" id="dy-mask"
-														placeholder="MM/DD/YY" required />
+													<input type="text" class="form-control" id="dy-mask" placeholder="MM/DD/YY" required />
 												</div>
 											</div>
 											<div class="col-md-7 col-12">
-												<!-- input -->
 												<div class="mb-3 mb-lg-0 position-relative">
 													<label class="form-label" for="dy-mask">발급 기관</label>
-													<input type="text" class="form-control" id="dy-mask"
-														placeholder="발급처 입력란" required />
+													<input type="text" class="form-control" id="dy-mask" placeholder="발급처 입력란" required />
 												</div>
 											</div>
 											<div class="d-grid mt-14">
@@ -526,40 +551,31 @@
 										</div>
 									</div>
 								</div>
-							</div>	 
-
-
+							</div>
+							
 							<div id="paymentMethod">
 								<div class="mb-2">
-									<div class="bg-light p-3 d-flex flex-md-row flex-column justify-content-between align-items-lg-center gap-2 gap-md-0"
-										data-bs-toggle="collapse" data-bs-target="#collapseCreditcard"
-										aria-expanded="true" aria-controls="collapseCreditcard">
+									<div class="bg-light p-3 d-flex flex-md-row flex-column justify-content-between align-items-lg-center gap-2 gap-md-0">
 										<div class="form-check">
-											<input class="form-check-input" type="radio" name="flexRadioDefault"
-												id="flexRadioDefault1" checked />
-											<label class="form-check-label" for="flexRadioDefault1">면허증으로 인증하기</label>
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" data-bs-toggle="collapse" data-bs-target="#collapseLicense" aria-expanded="false" aria-controls="collapseLicense" />
+											<label class="form-check-label" for="flexRadioDefault2">면허증으로 인증하기</label>
 										</div>
 									</div>
-
-									<div class="collapse show px-4" id="collapseCreditcard"
-										data-bs-parent="#paymentMethod">
+							
+									<div class="collapse px-4" id="collapseLicense" data-bs-parent="#paymentMethod">
 										<div class="row g-2 mt-4 mb-5">
 											<div class="col-md-6 col-12">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">면허증 번호</label>
-													<input type="text" class="form-control" placeholder="면허증 번호"
-														id="nameoncard" required />
+													<input type="text" class="form-control" placeholder="면허증 번호" id="nameoncard" required />
 												</div>
 											</div>
-											
 											<div class="col-md-4 col-12">
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">운전 면허증 유형</label>
-													<select data-choices data-choices-removeitembutton="true"
-														data-choices-classname="form-select">
+													<select data-choices data-choices-removeitembutton="true" data-choices-classname="form-select">
 														<option selected>1종/2종</option>
-														<option value="">1종/대형</option>
+														<option value="1종/대형">1종/대형</option>
 														<option value="1종/보통">1종/보통</option>
 														<option value="1종/특수 (대형견인)">1종/특수 (대형견인)</option>
 														<option value="1종/특수 (구난차)">1종/특수 (구난차)</option>
@@ -570,51 +586,39 @@
 												</div>
 											</div>
 											<div class="col-md-4 col-12">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">성&nbsp;(이름)</label>
-													<input type="text" class="form-control" placeholder="성 ( First Name )"
-														id="nameoncard" required />
+													<input type="text" class="form-control" placeholder="성 ( First Name )" id="nameoncard" required />
 												</div>
 											</div>
 											<div class="col-md-6 col-12">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">이름</label>
-													<input type="text" class="form-control" placeholder="이름"
-														id="nameoncard" required />
+													<input type="text" class="form-control" placeholder="이름" id="nameoncard" required />
 												</div>
 											</div>
 											<div class="col-4 md-4 mb-5">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label for="card-mask" class="form-label">주민 번호</label>
-													<input type="text" class="form-control" id="card-mask"
-														placeholder="xxxxxx-xxxxxxx" required="" />
+													<input type="text" class="form-control" id="card-mask" placeholder="xxxxxx-xxxxxxx" required="" />
 												</div>
 											</div>
 											<div class="col-6">
-												<!-- input -->
 												<div class="mb-5 mb-lg-0">
 													<label class="form-label" for="nameoncard">주소</label>
-													<input type="text" class="form-control" placeholder="전입 주소"
-														id="nameoncard" required />
+													<input type="text" class="form-control" placeholder="전입 주소" id="nameoncard" required />
 												</div>
 											</div>
 											<div class="col-md-4s col-12">
-												<!-- input -->
 												<div class="mb-6 mb-lg-0 position-relative">
 													<label class="form-label" for="dy-mask">면허증 취득일 날짜</label>
-													<input type="text" class="form-control" id="dy-mask"
-														placeholder="MM/DD/YY" required />
+													<input type="text" class="form-control" id="dy-mask" placeholder="MM/DD/YY" required />
 												</div>
 											</div>
 											<div class="col-md-6 col-12">
-												<!-- input -->
 												<div class="mb-3 mb-lg-0 position-relative">
 													<label class="form-label" for="dy-mask">발급 기관</label>
-													<input type="text" class="form-control" id="dy-mask"
-														placeholder="발급처 입력란" required />
+													<input type="text" class="form-control" id="dy-mask" placeholder="발급처 입력란" required />
 												</div>
 											</div>
 											<div class="d-grid mt-14">
@@ -623,8 +627,9 @@
 										</div>
 									</div>
 								</div>
-							</div>	 
-					</div>
+							</div>
+							
+					<!-- </div> -->
 				</div>
 				<div class="col-lg-4">
 					
